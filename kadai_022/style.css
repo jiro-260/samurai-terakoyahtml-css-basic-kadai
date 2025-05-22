@@ -22,7 +22,7 @@ main {
 }
 .contents {
  border: 3px solid rgb(238, 204, 204);
- flex: basis 25%;
+ flex-basis:  25%;
  padding: 10px 15px;
  margin: 20px 0px;
  text-align: center;
@@ -33,7 +33,7 @@ h2 {
 }
 h2::before {
     content: "●";
-    color: orange;
+    color: rgb(239, 111, 139);
 }
 .contents p:nth-of-type(2)::first-letter {
     font-weight: bold;
@@ -68,5 +68,8 @@ a:hover {
      }
      #parent{
         display: block;
+     }
+     .contents {
+        flex-direction: column;
      }
 }
